@@ -1,0 +1,73 @@
+<div class="header">
+    <h1>Macro Nutrient Calculator</h1>
+</div>
+
+<div class="container">
+    <div class="icon-container">
+        <button class="b1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 512 512">
+                <circle cx="256" cy="56" r="56" fill="#5D1BF7" />
+                <path fill="#5D1BF7"
+                    d="M304 128h-96a64.19 64.19 0 0 0-64 64v107.52c0 10.85 8.43 20.08 19.27 20.47A20 20 0 0 0 184 300v-99.73a8.18 8.18 0 0 1 7.47-8.25a8 8 0 0 1 8.53 8V489a23 23 0 0 0 23 23a23 23 0 0 0 23-23V346.34a10.24 10.24 0 0 1 9.33-10.34A10 10 0 0 1 266 346v143a23 23 0 0 0 23 23a23 23 0 0 0 23-23V200.27a8.18 8.18 0 0 1 7.47-8.25a8 8 0 0 1 8.53 8v99.52c0 10.85 8.43 20.08 19.27 20.47A20 20 0 0 0 368 300V192a64.19 64.19 0 0 0-64-64Z" />
+            </svg>Male</button>
+        <button class="b2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 512 512">
+                <circle cx="255.75" cy="56" r="56" fill="#5D1BF7" />
+                <path fill="#5D1BF7"
+                    d="m394.63 277.9l-10.33-34.41v-.11l-22.46-74.86h-.05l-2.51-8.45a44.87 44.87 0 0 0-43-32.08h-120a44.84 44.84 0 0 0-43 32.08l-2.51 8.45h-.06l-22.46 74.86v.11l-10.37 34.41c-3.12 10.39 2.3 21.66 12.57 25.14a20 20 0 0 0 25.6-13.18l25.58-85.25l2.17-7.23a8 8 0 0 1 15.53 2.62a7.78 7.78 0 0 1-.17 1.61L155.43 347.4a16 16 0 0 0 15.32 20.6h29v114.69c0 16.46 10.53 29.31 24 29.31s24-12.85 24-29.31V368h16v114.69c0 16.46 10.53 29.31 24 29.31s24-12.85 24-29.31V368h30a16 16 0 0 0 15.33-20.6l-43.74-145.81a7.52 7.52 0 0 1-.16-1.59a8 8 0 0 1 15.54-2.63l2.17 7.23l25.57 85.25A20 20 0 0 0 382.05 303c10.27-3.44 15.69-14.71 12.58-25.1Z" />
+            </svg>Female</button>
+    </div>
+
+    <div class="options">
+        <select class='preset'>
+            <option value="None">None</option>
+            <option value="Gain">Gaining Weight</option>
+            <option value="Lose">Losing Weight</option>
+            <option value="Maintain">Maintaining Weight</option>
+        </select>
+    </div>
+
+    <div class="grid-container">
+        <div class="item1">
+            <label>Height (cm)</label>
+            <input type="text" class="input1"><br>
+        </div>
+
+        <div class="item2">
+            <label>Weight (kg)</label>
+            <input type="text" class="input2">
+        </div>
+
+        <div class="item3">
+            <label>Age</label>
+            <input type="text" class="input3">
+        </div>
+
+        <div class="item4">
+            <label>Activity Level</label>
+            <select class="input4">
+                <option class="none" value="0">None</option>
+                <option class="sedentary" value="1.2">Sedentary</option>
+                <option class="lactive" value="1.4">Lightly Active</option>
+                <option class="mactive" value="1.6">Moderately Active</option>
+                <option class="vactive" value="1.7">Very Active</option>
+                <option class="eactive" value="1.9">Extra Active</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <a href=""><input type="button" class="calculate" value="Calculate"></a>
+    </div>
+
+    <div class="result-card">
+        <h3>RESULT</h3>
+
+        <div class="paragraph">
+            <p class="total-calories"></p>
+            <p>You need to consume these daily :</p>
+            <p class="fat">Fat :</p>
+            <p class="protein">Protein :</p>
+            <p class="carbo">Carbohydrates :</p>
+        </div>
+    </div>
+</div>
+
+<script src="/Scripts/Macro.js"></script>

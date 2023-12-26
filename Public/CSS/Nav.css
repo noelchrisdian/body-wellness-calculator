@@ -1,0 +1,24 @@
+nav{
+    background-color: #5D1BF7;
+    padding: 5px;
+}
+
+.navbar{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+
+.navbar li{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #FFFFFFCF;
+}
+
+.navbar h1 a:hover, .navbar li a:hover{
+    color: #FFF;
+}

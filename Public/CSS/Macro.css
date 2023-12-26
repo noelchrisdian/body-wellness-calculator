@@ -1,0 +1,159 @@
+*{
+    font-family: 'Geologica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 10px auto 10px;
+}
+
+.icon-container{
+    width: 380px;
+    margin: 30px auto 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "b1 b1 b2 b2";
+}
+
+.b1{
+    position: relative;
+    grid-area: b1;
+    padding: 5px 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+    cursor: pointer;
+}
+
+
+.b2{
+    position: relative;
+    grid-area: b2;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+    cursor: pointer;
+}
+
+
+button:hover{
+    border: 2px solid #5D1BF7;
+}
+
+.options{
+    width: 370px;
+    margin: 20px auto 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    padding: 10px;
+}
+
+.item1{
+    grid-area: header;
+}
+
+.item2{
+    grid-area: left;
+}
+
+.item3{
+    grid-area: right;
+}
+
+.item4{
+    grid-area: footer;
+}
+
+.grid-container{
+    width: 370px;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header header left left"
+    "header header left left"
+    "right right footer footer"
+    "right right footer footer"
+    ;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.input1, .input2, .input3{
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+
+.input4{
+    margin-top: 5px;
+    padding: 5px 20px;
+    text-align: left;
+    direction: ltr;
+}
+
+a {
+    text-decoration: none;
+}
+
+.calculate{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin: 30px auto;
+    padding: 10px 150px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #5D1BF7;
+    border: 1px solid #5D1BF7;
+    color: white;
+    cursor: pointer;
+}
+
+.calculate:hover{
+    background-color: #4D04F7;
+    border: 1px solid #4D04F7;
+    color: white;
+}
+
+.result-card{
+    display: none;
+    width: 375px;
+    margin: 20px auto auto;
+    padding: 10px;
+    border: 2px solid #C88800;
+    background-color: #FFD518;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.paragraph{
+    font-size: 15px;
+}
+
+.total-calories, .fat, .protein, .carbo{
+    margin: 15px 0px;
+}
+

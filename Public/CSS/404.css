@@ -1,0 +1,20 @@
+*{
+    font-family: 'Geologica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{
+    margin: 40px auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
