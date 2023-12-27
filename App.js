@@ -12,7 +12,7 @@ app
 app
     .get('/', (req, res) => {
         res.render('Home', {
-            title: 'Home',
+            title: 'Beiss - Body Wellness Calculator',
             layout: 'Layouts/Main',
             css: 'CSS/Home.css'
         })
